@@ -107,7 +107,7 @@ class Partie
 
     public function __construct()
     {
-        $this->time = new \DateTime('now');
+        $this->timer = new \DateTime('now');
         $this->debutPartie = new \DateTime('now');
     }
 

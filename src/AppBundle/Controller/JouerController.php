@@ -80,6 +80,29 @@ class JouerController extends Controller
 
             $partie->setTourJoueur($partie->getJoueur1());
 
+            $terrain = array(
+                'col1' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col2' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col3' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col4' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col5' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col6' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col7' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col8' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0)),
+                'col9' => array('j1' => array(0,0,0),
+                                'j2' => array(0,0,0))
+                );
+            $partie->setTerrainj1($terrain);
+            $partie->setTerrainj2($terrain);
+
             $em->persist($partie);
             $em->flush();
 
